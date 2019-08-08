@@ -8,6 +8,8 @@ deploy:
   api_key: $GITHUB_TOKEN
   file: Tiddier.zip
   skip_cleanup: true
+  on:
+    tags: true
 
 branches:
   only:

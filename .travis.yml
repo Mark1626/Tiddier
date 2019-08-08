@@ -1,0 +1,15 @@
+dist: bionic
+
+script:
+  - make
+
+deploy:
+  provider: releases
+  api_key: $GITHUB_TOKEN
+  file: Tiddier.zip
+  skip_cleanup: true
+
+branches:
+  only:
+  - master
+  - /^v\d+\.\d+(\.\d+)?$/

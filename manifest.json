@@ -1,0 +1,10 @@
+{
+  "name": "Tiddier",
+  "version": "1.0",
+  "description": "Tiddier old webpages",
+  "permissions": ["activeTab", "tabs"],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 2
+}
